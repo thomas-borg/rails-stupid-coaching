@@ -1,0 +1,14 @@
+<div class="container mt-4 w-50">
+<h1>Stupid Coaching</h1>
+  <div id="question" class="px-3 py-2 my-3 border-start border-5">
+    <p><%= params[:question] %></p>
+    <p class="fst-italic"> -You</p>
+  </div>
+
+  <div id="answer" class="px-3 py-2 my-3 border-start border-5">
+    <p class="fw-bold"><%= @answer %></p>
+    <p class="fst-italic"> -Your coach</p>
+  </div>
+
+  <%= link_to "Ask a new question", ask_path %>
+</div>
